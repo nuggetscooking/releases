@@ -1,47 +1,46 @@
 # Nuggets
 
-La bibliothèque Nuggets est un ensemble de snippets pour le logiciel Articulate Storyline 360.
-Elle propose un certain nombre de fonctionnalités supplémentaires et permet de simplifier l'intégration de nouvelles. 
+The Nuggets library is a set of snippets for the Articulate Storyline 360 software.
+It offers a number of additional functionalities and simplifies the integration of new ones. 
 
-Pour en apprendre plus, n'hésitez pas à consulter la **[chaine Youtube](http://www.youtube.com/@nuggets.cooking5653)** et l'**[API en ligne](https://nuggets.cooking/)**. 
+To find out more, check out the **[Youtube channel](http://www.youtube.com/@nuggets.cooking5653)** and the **[online API](https://nuggets.cooking/)**. 
 
 ## Installation
 
-La bibliothèque doit être incorporée dans le **fichier source `.story`** de votre futur projet. 
+The library must be incorporated into the `.story` source file of your future project. 
 
-Suivant votre cas, vous pouvez :
-- **partir de zéro** en utilisant le fichier `.story` d'exemple présent dans le repository,
-- **intégrer nuggets** dans un projet dépourvu de la librairie, 
-- ou **mettre à jour** la librairie nuggets.
+Depending on your situation, you can :
+- **start from scratch** using the reference `.story` file in this repository,
+- **integrate nuggets** into a project without the library, 
+- or **update** the nuggets library.
 
-## Fichier source d'exemple
+## Reference source file
 
-Le repository propore une structure de base pour démarrer votre projet de zéro.
-Une fois récupérée, configurez les différentes fonctions nécessaires, puis **let's go!**
+The repository provides a basic structure for starting your project from scratch.
+Once downloaded, configure the necessary functions, then **let's go!**.
 
-> La logique derrière la structure du fichier `.story` utilise à bon escient les déclencheurs et la navigation du player.
-> La librairie est ainsi chargée **une seule et unique fois**, quelque soit la reprise contextuelle.
-> Les chances donc pour que cette structure change dans le futur sont nulles.
-> Pour cette raison, le fichier source d'exemple n'est pas mis à jour.
-> Aussi, assurez-vous de toujours récupérer la dernière version de la librairie.<br>
-> Référez-vous ensuite à la partie **'Mise à jour'** pour l'intégrer dans votre fichier `.story`.
+> The logic behind the structure of the `.story` file makes good use of the player's triggers and navigation.
+> In this way, the library is loaded **only once**, whatever the contextual restart.
+> So the chances of this structure changing in the future are nil.
+> For this reason, the reference source file will be not updated.
+> So make sure you always have the latest version of the library.<br>
+> Then refer to the section **'Update'** to integrate it into your `.story` file.
 
-## Projet `sans` vers un projet `avec nuggets`
+## Project `without` towards a project `with nuggets`.
 
-Tout projet développé ou pouvant être publié sans problème avec une version récente de Storyline peut facilement implémenter la librairie.
+Any project that has been developed or can be published with a recent version of Storyline can easily implement the library.
 
-Référez-vous au [tutoriel vidéo sur la chaine Youtube](http://www.youtube.com/@nuggets.cooking5653) (lien vidéo à venir) pour faire les modifications nécessaires à votre fichier source.
-Reportez ensuite les 2 snippets ci-dessous dans les déclencheurs javascript respectifs.
+Refer to the video tutorial on the **[Youtube channel](http://www.youtube.com/@nuggets.cooking5653)** (video link coming soon) to make the necessary changes to your source file. Then copy/past the snippets below to the respective javascript triggers.
 
 ### Snippets
 
-#### Masque de diapositive principal
+#### Main mask
 ```
 const loaded = null!== document.querySelector("[data-id='nuggets']");
 GetPlayer().SetVar('nuggetsLoaded',loaded);
 
 ```
-#### Masque de diapositive `nuggets`
+#### `nuggets ` mask
 ```
 (()=>{let e=t=>{if("nuggets"===t.data.origin){if(void 0===t.data.lib||null===t.data.lib)t.source.postMessage({nuggetsID:GetPlayer().GetVar("nuggetsID"),courseID:GetPlayer().GetVar("Project.ActivityId")},"*");else{window.removeEventListener("message",e,!1);let a=e=>{let s=document.createElement("script");document.querySelector("head").appendChild(s);for(let d=0;d<e.length;d+=2)s.setAttribute(e[d],e[d+1]||`${t.data.lib.shift()}`);s.addEventListener("load",()=>{t.data.lib.length?a(t.data.attr):GetPlayer().SetVar("nuggetsLoaded",!0)},!1)};a(t.data.attr)}}};window.addEventListener("message",e,!1)})();
 ```
