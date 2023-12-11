@@ -30,7 +30,7 @@ Once downloaded, configure the necessary functions, then **let's go!**.
 
 Any project that has been developed or can be published with a recent version of Storyline can easily implement the library.
 
-Refer to the video tutorial on the **[Youtube channel](http://www.youtube.com/@nuggets.cooking5653)** (video link coming soon) to make the necessary changes to your source file. Then copy/past the snippets below to the respective javascript triggers.
+Refer to the tutorial on the **[Youtube channel](http://www.youtube.com/@nuggets.cooking5653)** (video link coming soon) to make the necessary changes to your source file. Then copy/past the snippets below to the respective javascript triggers.
 
 ### Snippets
 
@@ -45,29 +45,29 @@ GetPlayer().SetVar('nuggetsLoaded',loaded);
 (()=>{let e=t=>{if("nuggets"===t.data.origin){if(void 0===t.data.lib||null===t.data.lib)t.source.postMessage({nuggetsID:GetPlayer().GetVar("nuggetsID"),courseID:GetPlayer().GetVar("Project.ActivityId")},"*");else{window.removeEventListener("message",e,!1);let a=e=>{let s=document.createElement("script");document.querySelector("head").appendChild(s);for(let d=0;d<e.length;d+=2)s.setAttribute(e[d],e[d+1]||`${t.data.lib.shift()}`);s.addEventListener("load",()=>{t.data.lib.length?a(t.data.attr):GetPlayer().SetVar("nuggetsLoaded",!0)},!1)};a(t.data.attr)}}};window.addEventListener("message",e,!1)})();
 ```
 
-## Mise à jour de nuggets
+## Updating nuggets
 
-Nous préconisons de ne jamais effacer les anciennes versions de nuggets sans avoir effectué des tests au préalable.
+We strongly recommend not deleting old versions of nuggets without testing updates first.
 
-Si votre fichier source `.story` respecte la structure `nuggets` :
-- créez une nouvelle diapositive dans la scène réservée,
-- importez la version récupérée,
-- puis ciblez la bonne diapositive depuis le déclencheur dans le masque de diapositive principal.
+If your `.story` source file respects the `nuggets` structure:
+- create a new slide in the dedicated scene,
+- import the last version,
+- then target the correct slide from the trigger in the main  mask.
 
-Après publication, si un problème apparait, vous pourrez toujours repointer vers l'ancienne version.
+After publishing, if a problem arises, you can always revert to the previous version.
 
 ## Configuration
 
-Afin de pouvoir utiliser nuggets dans votre projet, vous devez en configurer chacune des fonctionnalités.
+To use nuggets in your project, you need to configure each of its functions.
 
-Suivant les cas, la configuration peut se faire à un ou plusieurs endroits :
-- le déclencheur `javascript` présent dans la diapositive `nuggets`,
-- le panneau de variables
-- des déclencheurs `javascript` présents dans les diapositives où vous souhaitez utiliser les fonctionnalités.
+Depending on the requirements, the configuration needs to be done in one or several spots:
+- the `javascript` trigger in the `nuggets` slide,
+- the `variables` panel and
+- `javascript` triggers in the slides where you want to use the power of nuggets.
 
-Reportez-vous à l'**[API en ligne](https://nuggets.cooking/)** pour plus de détails.
+See the **[API online](https://nuggets.cooking/)** for more details.
 
-## Utilisation
-Une fois la librairie nuggets importée, les fonctionnalités configurées, et votre projet monté, il ne vous reste plus qu'à publier votre projet et à contempler votre travail.
+## Usage
+Once you've imported the nuggets library, configured the functionalities and built your project, all that's left to do is publish it and admire your work.
 
-Vous pouvez au choix publier en mode **Web**, **SCORM** ou bien sur la plateforme **[Reviews d'Articulate](https://360.articulate.com/review/)**.
+You can choose to publish either in **Web**, **SCORM** or on the **[Articulate Reviews](https://360.articulate.com/review/)** platform.
