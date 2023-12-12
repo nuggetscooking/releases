@@ -4,6 +4,7 @@
 #### TODO
 - `core/storyline`
   -   event `SLIDE_CHANGE_IN_LIGHTBOX` not developed yet
+  -   **Known issue:** DISPLAY_CAPTION/REMOVE_CAPTION not triggered when no time between two subtitles,
   -   Storyline player buttons not targeted  
   
 - `customization/CustomCSS`
