@@ -3,18 +3,17 @@
 ### **First publication of the library**
 #### TODO
 - `core.storyline`
-  -   event `SLIDE_CHANGE_IN_LIGHTBOX` not developed yet
-  -   **Known issue:** `DISPLAY_CAPTION`/`REMOVE_CAPTION` not triggered when no time between two subtitles,
   -   Storyline player buttons not targeted  
   
 - `customization.CustomCSS`
   - W3C based CSSStyleSheet rules insteed direct cssText
-
--  `customization.EmbedFont`
-    -   have to be moved in `customization/CustomCSS`
+ 
+- `customization.Caption`
+  - replace GetCaptionContainer() either in accordance of the video space (true), the slide space (false) or the browser space (no action).
 
 -  `customization.CaptionBBCode`
     -   alignment
+    -   **Known issue:** bug when triggered with `{ subtree: true }` and `CHANGE_CAPTION_TEXT`
 
 -  `customization.Lightbox`
     -   resetSize (to 100% of the main diapo size)
