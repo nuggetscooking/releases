@@ -13,7 +13,6 @@
 
 -  `customization.CaptionBBCode`
     -   alignment
-    -   **Known issue:** bug when triggered with `{ subtree: true }` and `CHANGE_CAPTION_TEXT`
 
 -  `customization.Lightbox`
     -   resetSize (to 100% of the main diapo size)
