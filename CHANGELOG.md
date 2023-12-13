@@ -2,23 +2,22 @@
 ## 2023.12.11
 ### **First publication of the library**
 #### TODO
-- `core/storyline`
-  -   event `SLIDE_CHANGE_IN_LIGHTBOX` not developed yet
+- `core.storyline`
   -   Storyline player buttons not targeted  
   
-- `customization/CustomCSS`
+- `customization.CustomCSS`
   - W3C based CSSStyleSheet rules insteed direct cssText
+ 
+- `customization.Caption`
+  - replace GetCaptionContainer() either in accordance of the video space (true), the slide space (false) or the browser space (no action).
 
--  `customization/EmbedFont`
-    -   have to be moved in `customization/CustomCSS`
-
--  `customization/CaptionBBCode`
+-  `customization.CaptionBBCode`
     -   alignment
 
--  `customization/Lightbox`
+-  `customization.Lightbox`
     -   resetSize (to 100% of the main diapo size)
     -   replace (to the same position of the main diapo, event with menu open
       
-- `webobjects/WebObject` 
+- `webobjects.WebObject` 
     -   postMessage from Storyline to the Web Object
-        **Known issue:** Since security policy with top page/iframe on local drive, works only on a server
+    -   **Known issue:** Since security policy with top page/iframe on local drive, works only on a server
