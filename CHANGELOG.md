@@ -2,24 +2,24 @@
 ## 2023.12.11
 ### **First publication of the library**
 #### TODO
-- `core/storyline`
+- `core.storyline`
   -   event `SLIDE_CHANGE_IN_LIGHTBOX` not developed yet
   -   **Known issue:** DISPLAY_CAPTION/REMOVE_CAPTION not triggered when no time between two subtitles,
   -   Storyline player buttons not targeted  
   
-- `customization/CustomCSS`
+- `customization.CustomCSS`
   - W3C based CSSStyleSheet rules insteed direct cssText
 
--  `customization/EmbedFont`
+-  `customization.EmbedFont`
     -   have to be moved in `customization/CustomCSS`
 
--  `customization/CaptionBBCode`
+-  `customization.CaptionBBCode`
     -   alignment
 
--  `customization/Lightbox`
+-  `customization.Lightbox`
     -   resetSize (to 100% of the main diapo size)
     -   replace (to the same position of the main diapo, event with menu open
       
-- `webobjects/WebObject` 
+- `webobjects.WebObject` 
     -   postMessage from Storyline to the Web Object
         **Known issue:** Since security policy with top page/iframe on local drive, works only on a server
