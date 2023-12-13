@@ -1,4 +1,4 @@
-![logo](/assets/images/nuggets-logo.png)
+![logo](/assets/images/nuggets-logo-small.png)
 
 The Nuggets library is a set of snippets for the **`Articulate Storyline 360`** software.
 It offers a number of **additional functionalities** and **simplifies** the integration of new ones. 
