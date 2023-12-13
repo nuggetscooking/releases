@@ -21,4 +21,4 @@
       
 - `webobjects.WebObject` 
     -   postMessage from Storyline to the Web Object
-        **Known issue:** Since security policy with top page/iframe on local drive, works only on a server
+    -   **Known issue:** Since security policy with top page/iframe on local drive, works only on a server
