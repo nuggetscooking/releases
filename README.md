@@ -18,7 +18,7 @@ Depending on the situation, you can :
 
 The repository provides a basic structure for starting your project from scratch.
 
-> [!Imporant]
+> [!IMPORTANT]
 > The logic behind the structure of the `.story` file makes good use of the storyline player's triggers and navigation.
 > In this way, the library is loaded **only once**, whatever the contextual restart.
 > So the chances of this structure changing in the future are nil.
