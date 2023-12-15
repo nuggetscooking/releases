@@ -9,11 +9,10 @@
 | :----: | :----: | ------ | ------ |
 | `core` | `storyline` | • Storyline player buttons not targeted   | |
 | `customization` | `CustomCSS` | • W3C based CSSStyleSheet rules insteed direct cssText | |
-
-| | `Caption` | replace GetCaptionContainer() either in accordance of the video space (true), the slide space (false) or the browser space (no action). | |
-| | `CaptionBBCode`| alignment | |
-| | `Lightbox` | resetSize (to 100% of the main diapo size)<br>replace (to the same position of the main diapo, event with menu open | |
-| `webobjects` | `WebObject` | postMessage from Storyline to the Web Object | Since security policy with top page/iframe on local drive, works only on a server |
+|  | `Caption` | replace GetCaptionContainer() either in accordance of the video space (true), the slide space (false) or the browser space (no action). |  |
+|  | `CaptionBBCode`| alignment |  |
+|  | `Lightbox` | resetSize (to 100% of the main diapo size)<br>replace (to the same position of the main diapo, event with menu open |  |
+| `webobjects` | `WebObject` | postMessage from Storyline to the Web Object | Since security policy with top page/iframe on local drive, works only on a server  |
 
 
 
