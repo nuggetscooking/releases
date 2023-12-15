@@ -7,7 +7,7 @@
 
 | Object | Comments |
 | :----: | ------ |
-| `core.storyline` | * Storyline player buttons not targeted   |
+| `core.storyline` | • Storyline player buttons not targeted   |
 | `customization.CustomCSS` | W3C based CSSStyleSheet rules insteed direct cssText |
 | `customization.Caption` | replace GetCaptionContainer() either in accordance of the video space (true), the slide space (false) or the browser space (no action). |
 | `customization.CaptionBBCode` | alignment |
