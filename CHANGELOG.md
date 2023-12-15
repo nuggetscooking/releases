@@ -8,11 +8,12 @@
 | Category | Object | TODO | **Known issue:**  |
 | :----: | :----: | ------ | ------ |
 | `core` | `storyline` | Create `Get` function to targeting player buttons | |
-| `customization` | `CustomCSS` | Use W3C based CSSStyleSheet rules insteed direct cssText | |
+| `customization` | `CustomCSS` | Use W3C based `CSSStyleSheet` rules insteed direct cssText when needed | |
 |  | `Caption` | Replace Caption container either in accordance of <br>  • the video space `(true)`, <br>  • the slide space `(false)` or <br>  • the browser space (no action). |  |
 |  | `CaptionBBCode`| manage `alignment` |  |
-|  | `Lightbox` | • resetSize (to 100% of the main diapo size)<br>• replace (to the same position of the main diapo, event with menu open |  |
-| `webobjects` | `WebObject` | • postMessage from Storyline to the Web Object | Since security policy with top page/iframe on local drive, works only on a server  |
+|  | `Lightbox` | ResetSize (to 100% of the main diapo size)< |  |
+|  |  | Replace (to the same position of the main diapo, event with menu open |  |
+| `webobjects` | `WebObject` | `postMessage` from Storyline to the Web Object | Since security policy with top page/iframe on local drive, works only on a server  |
 
 
 
