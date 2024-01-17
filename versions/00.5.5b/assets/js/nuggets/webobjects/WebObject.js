@@ -10,7 +10,7 @@ const WebObject = {
 
 				$head.appendChild(CreateJSNode(`../../../${nuggets.getFolder()}/webobjects/${$src}.js`));
 				
-				window.addEventListener("message", WebObject.receiveMessage, false);
+				window.addEventListener("message", WebObject.message, false);
 				// TODO : event STL2WO
 				_frame.contentWindow.onbeforeunload = () => WebObject.disconnect(); 
 				console.log("injection done");
@@ -36,7 +36,7 @@ const WebObject = {
 
 	},
 
-	receiveMessage: ($event) => {
+	message: ($event) => {
 		if ('nuggets' !== $event.data.origin) return;		
 		
 		switch( $event.data.event ) {
@@ -51,7 +51,7 @@ const WebObject = {
 
 	
 	disconnect: () => {
-		window.removeEventListener("message", WebObject.receiveMessage); 
+		window.removeEventListener("message", WebObject.message); 
 	}
 
 }
