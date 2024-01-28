@@ -1,0 +1,20 @@
+<html>
+	<head>		
+	<script src="assets/js/nuggets/data.js" type="text/javascript"></script>
+	<script type="text/javascript">
+
+	(() => {
+
+		(($attributes) => {
+		  window.parent.postMessage(Object.assign($attributes, { origin: 'nuggets' }), '*');
+		})({ attr:['type', 'text/javascript', 'src', undefined, 'async', true, 'data-id', 'nuggets'],
+			 lib:(($scriptPaths) => {	  
+		 		for (const category in N) { N[category].forEach(script => $scriptPaths.push(`${fullPath}/js/nuggets/${category}/${script}.js`)); }
+		 		return $scriptPaths; })([])  });
+
+	})();
+
+	</script>
+	</head>
+</html>
+
