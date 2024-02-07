@@ -1,7 +1,7 @@
 
 const WebObject = {
 
-	connect : ($src = 'postMessage') => { // Todo: STL2WO postMessage argument
+	connect : ($src = 'SendToSTL') => { // Todo: STL2WO postMessage argument
 		
 		const _frame = Query(document,'iframe');
 		const _WO = ( _frame.contentDocument || _frame.contentWindow.document );
