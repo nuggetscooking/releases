@@ -1,0 +1,36 @@
+<html>
+	<head>		
+	<script src="assets/js/nuggets/data.js" type="text/javascript"></script>
+	<script type="text/javascript">
+
+	(() => {
+
+		(($attributes) => {
+		  window.parent.postMessage(Object.assign($attributes, { origin: 'nuggets' }), '*');
+		})({ attr:['type', 'text/javascript', 'src', undefined, 'async', true, 'data-id', 'nuggets'],
+			 lib:(($scriptPaths) => {	  
+		 		for (const category in N) { N[category].forEach(script => $scriptPaths.push(`${fullPath}/js/nuggets/${category}/${script}.js`)); }
+		 		return $scriptPaths; })([])  });
+
+	})();
+
+	</script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Changa&display=swap" rel="stylesheet">
+	<style type="text/css">
+		.center,.loader{position:absolute}*{padding:0;margin:0}.center{top:40%;left:50%;-ms-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}.loader{left:25%;width:50px;aspect-ratio:1;border-radius:50%;border:8px solid;border-color:#1155CC66 #1155CC00;animation:1s infinite l1}@keyframes l1{to{transform:rotate(.5turn)}}.label{position:relative;top:15px;font-family:Calibri,sans-serif;font-size:1.5rem}
+	</style>
+	</head>
+	<body>
+		<div class="center">
+			<div class="loader"></div>
+			<div class="label">Loading Nuggets...</div>
+		</div>
+	</body>
+</html>
+
+
+
+
+
